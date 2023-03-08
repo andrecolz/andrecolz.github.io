@@ -3,35 +3,91 @@
     <title>calcolatrice</title>
 </head>
 
+<style>
+    button {
+        height: 25;
+        width: 72;
+    }
+
+    p{
+        height: 30;
+        width: 300;
+        text-align: right;
+        background-color: aquamarine;
+    }
+</style>
+
 <body>
 
-<input id="casella">
-<div>
-    <button type="button" onclick="myFunction('+')">+</button>
-    <button type="button" onclick="myFunction('-')">-</button>
-    <button type="button" onclick="myFunction('*')">*</button>
-    <button type="button" onclick="myFunction('/')">/</button>
-    <button type="button" onclick="myFunction('=')">=</button>
-</div>
-<p id="calcolo"></p>
+<p id="risu" style="border:2px solid rgb(26, 76, 129);"></p>
+
+<table>
+    <tr>
+        <td><button type="button" onclick="scrivi(1)">1</button></td>
+        <td><button type="button" onclick="scrivi(2)">2</button></td>
+        <td><button type="button" onclick="scrivi(3)">3</button></td>
+        <td><button type="button" onclick="scriviS('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="scrivi(4)">4</button></td>
+        <td><button type="button" onclick="scrivi(5)">5</button></td>
+        <td><button type="button" onclick="scrivi(6)">6</button></td>
+        <td><button type="button" onclick="scriviS('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="scrivi(7)">7</button></td>
+        <td><button type="button" onclick="scrivi(8)">8</button></td>
+        <td><button type="button" onclick="scrivi(9)">9</button></td>
+        <td><button type="button" onclick="scriviS('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="cancella()">canc</button></td>
+        <td><button type="button" onclick="scrivi(0)">0</button></td>
+        <td><button type="button" onclick="calcola()">=</button></td>
+        <td><button type="button" onclick="scriviS('/')">/</button></td>
+    </tr>
+</table>
 
 <script>
-    let val1 = 0, val2 = 0, risultato = 0;
-    function myFunction(segno) {
-        if(segno == '+'){
+    let eq = 0, op = 'n', risultato = 0;
 
-        }
-        if(segno == '-'){
-            
-        }
-        if(segno == '*'){
-            
-        }
-        if(segno == '/'){
-            
-        }
-        if(segno == '='){
-            document.getElementById("demo").innerHTML = risultato;
+    function scrivi(valore){
+        document.getElementById("risu").innerHTML += valore;
+        eq += valore + ";";
+    }
+
+    function scriviS(segno) {
+        document.getElementById("risu").innerHTML += " " + segno + " ";
+        op = segno;
+    }
+
+    function cancella(){
+        document.getElementById("risu").innerHTML = '';
+        eq = 0;
+        op = 'n';
+        risultato = 0;
+    }
+
+    function calcola(){
+        if(op != 'n'){
+            arr = eq.split(";")
+            if(op == '+'){
+                risultato = parseInt(arr[0]) + parseInt(arr[1]);
+                document.getElementById("risu").innerHTML = risultato;
+            }
+            if(op == '-'){
+                risultato = parseInt(arr[0]) - parseInt(arr[1]);
+                document.getElementById("risu").innerHTML = risultato;
+            }
+            if(op == '*'){
+                risultato = parseInt(arr[0]) * parseInt(arr[1]);
+                document.getElementById("risu").innerHTML = risultato;
+            }
+            if(op == '/'){
+                risultato = parseInt(arr[0]) / parseInt(arr[1]);
+                document.getElementById("risu").innerHTML = risultato;
+            }
+            eq = risultato + ";";
         }
     }
 </script>

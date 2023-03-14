@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(26, 26, 32);
+    display: flex;
+    flex-direction: column;
+}
+
+#barra {
+    background-color: rgb(34, 46, 59);
+    height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#scrHome {
+    text-align: center;
+    line-height: 73px;
+    font-size: 28px;
+    color: rgb(179, 182, 183); 
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 110px;
+    margin-top: 90px;
+}
+  
+.upInfo {
+    background-color: rgb(93, 109, 126);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 110px;
+}
+
+.mat {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(19, 141, 117);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 82, 118);
+}

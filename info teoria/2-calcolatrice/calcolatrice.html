@@ -1,104 +1,83 @@
 <html>
 <head>
     <title>calcolatrice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 
-<style>
-    button {
-        height: 25;
-        width: 72;
-    }
-
-    p {
-        height: 30;
-        width: 300;
-        text-align: right;
-        background-color: aquamarine;
-    }
-
-    button {
-        background-color: gray;
-    }
-
-    button:hover {
-        background-color: beige;
-    }
-</style>
-
 <body>
+<div id="corpoCalc">
+    <p id="risu" style="border:3px solid rgb(26, 76, 129);"></p>
 
-<p id="risu" style="border:2px solid rgb(26, 76, 129);"></p>
+    <table>
+        <tr>
+            <td><button type="button" onclick="scrivi(1)">1</button></td>
+            <td><button type="button" onclick="scrivi(2)">2</button></td>
+            <td><button type="button" onclick="scrivi(3)">3</button></td>
+            <td><button type="button" onclick="scriviS('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="scrivi(4)">4</button></td>
+            <td><button type="button" onclick="scrivi(5)">5</button></td>
+            <td><button type="button" onclick="scrivi(6)">6</button></td>
+            <td><button type="button" onclick="scriviS('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="scrivi(7)">7</button></td>
+            <td><button type="button" onclick="scrivi(8)">8</button></td>
+            <td><button type="button" onclick="scrivi(9)">9</button></td>
+            <td><button type="button" onclick="scriviS('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="cancella()">canc</button></td>
+            <td><button type="button" onclick="scrivi(0)">0</button></td>
+            <td><button type="button" onclick="calcola()">=</button></td>
+            <td><button type="button" onclick="scriviS('/')">/</button></td>
+        </tr>
+    </table>
 
-<table>
-    <tr>
-        <td><button type="button" onclick="scrivi(1)">1</button></td>
-        <td><button type="button" onclick="scrivi(2)">2</button></td>
-        <td><button type="button" onclick="scrivi(3)">3</button></td>
-        <td><button type="button" onclick="scriviS('+')">+</button></td>
-    </tr>
-    <tr>
-        <td><button type="button" onclick="scrivi(4)">4</button></td>
-        <td><button type="button" onclick="scrivi(5)">5</button></td>
-        <td><button type="button" onclick="scrivi(6)">6</button></td>
-        <td><button type="button" onclick="scriviS('-')">-</button></td>
-    </tr>
-    <tr>
-        <td><button type="button" onclick="scrivi(7)">7</button></td>
-        <td><button type="button" onclick="scrivi(8)">8</button></td>
-        <td><button type="button" onclick="scrivi(9)">9</button></td>
-        <td><button type="button" onclick="scriviS('*')">*</button></td>
-    </tr>
-    <tr>
-        <td><button type="button" onclick="cancella()">canc</button></td>
-        <td><button type="button" onclick="scrivi(0)">0</button></td>
-        <td><button type="button" onclick="calcola()">=</button></td>
-        <td><button type="button" onclick="scriviS('/')">/</button></td>
-    </tr>
-</table>
+    <h3 id="logo">trachete calculator</h3>
+</div>
+</body>
 
 <script>
-    let eq = 0, op = 'n', risultato = 0;
+    let val1 = 0, op = 'n', risultato = 0;
 
     function scrivi(valore){
         document.getElementById("risu").innerHTML += valore;
-        eq += valore + ";";
+        if(risultato != 0)
+            val1 = parseInt(valore);
     }
 
     function scriviS(segno) {
+        risultato = parseInt(document.getElementById("risu").innerHTML)
         document.getElementById("risu").innerHTML += " " + segno + " ";
         op = segno;
     }
 
     function cancella(){
         document.getElementById("risu").innerHTML = '';
-        eq = 0;
+        val1 = 0;
         op = 'n';
         risultato = 0;
     }
 
     function calcola(){
         if(op != 'n'){
-            arr = eq.split(";")
             if(op == '+'){
-                risultato = parseInt(arr[0]) + parseInt(arr[1]);
-                document.getElementById("risu").innerHTML = risultato;
+                risultato = risultato + val1;
             }
             if(op == '-'){
-                risultato = parseInt(arr[0]) - parseInt(arr[1]);
-                document.getElementById("risu").innerHTML = risultato;
+                risultato = risultato - val1;
             }
             if(op == '*'){
-                risultato = parseInt(arr[0]) * parseInt(arr[1]);
-                document.getElementById("risu").innerHTML = risultato;
+                risultato = risultato * val1;
             }
             if(op == '/'){
-                risultato = parseInt(arr[0]) / parseInt(arr[1]);
-                document.getElementById("risu").innerHTML = risultato;
+                risultato = risultato / val1;
             }
-            eq = risultato + ";";
+            document.getElementById("risu").innerHTML = risultato;
         }
     }
 </script>
-
-</body>
 </html>

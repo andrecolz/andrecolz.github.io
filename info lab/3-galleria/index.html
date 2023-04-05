@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>immagini selezionate</title>
+
+        <script>
+            function validaForm(){
+                var image = document.createElement("img");
+                var imageParent = document.getElementById("img1");
+
+                if(document.cibi.cibo.value == 'pizza'){
+                    document.getElementById("img1").src = "pizza1.jpg";
+                    document.getElementById("img2").src = "pizza2.jpg";
+                    document.getElementById("img3").src = "pizza3.jpg";
+                }
+                if(document.cibi.cibo.value == 'cassoeula'){
+                    document.getElementById("img1").src = "cassoeula1.jpg";
+                    document.getElementById("img2").src = "cassoeula2.jpg";
+                    document.getElementById("img3").src = "cassoeula3.jpg";
+                }
+                if(document.cibi.cibo.value == 'trippa'){
+                    document.getElementById("img1").src = "trippa1.jpg";
+                    document.getElementById("img2").src = "trippa2.jpg";
+                    document.getElementById("img3").src = "trippa3.jpg";
+                }
+            }
+        </script>
+
+        <style>
+            body{
+                background-color: rgb(196, 215, 221);
+            }
+            
+            img {
+                width: 250px;
+                height: 250px;
+            }
+            
+            td {
+                border: 4px solid;
+                border-color: dimgray;
+            }
+
+            td:hover {
+                border: 6px solid;
+                border-color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form name="cibi">
+            cibo:
+            <select name="cibo">
+                <option value="nessuna" selected>nessuno</option>
+                <option value="pizza">pizza</option>
+                <option value="cassoeula">cassoeula</option>
+                <option value="trippa">trippa</option>
+            </select>
+            <button type="button" value="invia" onclick="validaForm()">invia</button>
+            <input type="reset" value="reset">
+        </form>
+        <p>
+            <table>
+                <tr>
+                    <td><img id="img1" src="img/default.jpg"></td>
+                    <td><img id="img2" src="img/default.jpg"></td>
+                    <td><img id="img3" src="img/default.jpg"></td>
+                </tr>
+            </table>
+        </p>
+    </body>
+</html>

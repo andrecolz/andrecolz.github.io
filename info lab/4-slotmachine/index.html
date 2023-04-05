@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>slot machine</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/slot.js"></script>
+        <script src="javascript/immagini.js"></script>
+        <script>
+            let sl = new CSlotMachine();
+        </script>
+    </head>
+
+    <body>
+        <div id="corpo">
+            <h1>Slot Machine</h1>
+            
+            <br>
+            <table>
+                <tr>
+                    <th style="color: green"><img id="im1" src="img/img7.png"></th>
+                    <th style="color: white"><img id="im2" src="img/img7.png"></th>
+                    <th style="color:red"><img id="im3" src="img/img7.png"></th>
+                </tr>
+            </table>
+            <br>
+            <table id="tbtn">
+                <tr>
+                    <th class="thbtn"><button id="btn1" onclick="sl.startSlot()">spin</button></th>
+                    <th class="thbtn"><button id="btn2" onclick="sl.cancella()">reset</button></th>
+                </tr>
+            </table>
+            <br><br><br>
+            <p id="crediti">Crediti: 10</p>
+        </div>
+    </body>
+</html>

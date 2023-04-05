@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(189, 209, 212);
+}
+
+#corpo {
+    height: 70%;
+    width: 47%;
+    background-color: rgb(203, 150, 214);
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 2%;
+    font-size: 45px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border: 3px solid;
+    border-radius: 8px;
+}
+
+#tbtn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thbtn {
+    border: 0px solid;
+}
+
+#btn1 {
+    width: 50px;
+    height: 28px;
+    background-color: rgb(142, 201, 84);
+    border-radius: 5px;
+    font-size: large;
+}
+
+#btn1:hover {
+    background-color: rgb(135, 235, 35);
+}
+
+#btn2 {
+    width: 60px;
+    height: 28px;
+    background-color: rgb(219, 79, 37);
+    border-radius: 5px;
+    font-size: large;
+}
+
+#btn2:hover {
+    background-color: rgb(226, 130, 74);
+}
+
+p {
+    text-align: center;
+    
+}

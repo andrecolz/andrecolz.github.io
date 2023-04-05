@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/todo.js"></script>
+        <script>
+            const todo = new CToDo();
+        </script>
+    </head>
+
+    <body>
+        <div id="corpo">
+            <h1 id="titolo">ToDo List</h1>
+
+            <form name="cibi"></form>
+                <table>
+                    <tr>
+                        <th id="thtxt1"><input type="text" id="txt1"></th>
+                        <th id="thdt1"><input id="dt1" type="date"></th>
+                        <th><button id="btn1" onclick="todo.aggiungi()">+</button></th>
+                    </tr>
+                </table>
+            </form>
+
+            <br>
+            <table id="tb1">
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(0)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(0)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(1)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(1)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(2)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(2)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(3)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(3)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(4)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(4)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(5)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(5)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(6)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(6)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(7)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(7)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(8)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(8)">x</button></th>
+                </tr>
+                <tr style="display:none;">
+                    <th class="thchk"><div class="chk1"><input type="checkbox" onclick="todo.chekkata(9)"></div></th>
+                    <th class="thp"><p></p></th>
+                    <th class="thel"><button id="btn2" onclick="todo.elimina(9)">x</button></th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

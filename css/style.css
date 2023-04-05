@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(45, 64, 85);
+    display: flex;
+    flex-direction: column;
+}
+
+#barra {
+    background-color: rgb(65,81,78);
+    height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#scrHome {
+    text-align: center;
+    line-height: 73px;
+    font-size: 28px;
+    color: rgb(246,241,219); 
+    font-family: 'Roboto', sans-serif;
+}
+  
+#contInfoTeoria {
+    background-color: rgb(102, 123, 146);
+    border-radius: 10px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 2%;
+    width: 30%;
+    height: 230px;
+}
+
+#contInfoLab {
+    background-color: rgb(102, 123, 146);
+    border-radius: 10px;
+    float: right;
+    margin-right: 7%;
+    margin-top: 2%;
+    width: 30%;
+    height: 230px;
+}
+
+.mat {
+    margin-top: 11px;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(52, 109, 97);
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 82, 118);
+}
+
+a:hover {
+    color: rgb(36, 102, 143);
+}
+
+ul {
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 2%;
+}

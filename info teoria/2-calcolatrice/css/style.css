@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(223, 223, 216);
+}
+
+button {
+    height: 25;
+    width: 72;
+}
+
+#risu {
+    height: 30px;
+    width: 294px;
+    margin: 3px;
+    text-align: right;
+    background-color: rgb(137, 250, 212);
+    border-radius: 3px;
+}
+
+.numeri {
+    background-color: rgb(172, 170, 170);
+    border-radius: 3px;
+}
+
+.numeri:hover {
+    background-color: rgb(223, 223, 211);
+}
+
+.operatore {
+    background-color: rgb(141, 131, 131);
+    border-radius: 3px;
+}
+
+.operatore:hover {
+    background-color: rgb(185, 185, 173);
+}
+
+#corpoCalc {
+    width: 307px;
+    height: 220px;
+    border: 4px solid;
+    background-color: rgb(136, 165, 179);
+    border-radius: 9px;
+    padding: 2px;
+}
+
+#logo {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    margin: 13px;
+}

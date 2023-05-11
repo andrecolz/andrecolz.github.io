@@ -1,0 +1,210 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(175, 182, 189);
+}
+
+#barra{
+    height: 60px;
+    width: 90%;
+    background-color: rgb(134, 131, 131);
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+#cont {
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    border: 5px solid rgb(98, 81, 114);
+    border-radius: 1px;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url("../img/cvuoto.jpg");
+    
+}
+
+#cont2 {
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#stati {
+    margin-right: 25px;
+    float: left;
+    width: 300px;
+    height: 180px;
+    margin-top: 50px;
+    background-color: rgb(212, 206, 171);
+    border-radius: 5px;
+    border: 4px solid grey;
+}
+
+#difficolta {
+    margin-left: 25px;
+    float: right;
+    width: 300px;
+    height: 180px;
+    margin-top: 50px;
+    background-color: rgb(212, 206, 171);
+    border-radius: 5px;
+    border: 4px solid grey;
+}
+
+
+
+#tit {
+    font-size: 35px;
+    text-align: center;
+    height: fit-content;
+    padding-top: 11px;;
+}
+
+
+
+
+
+.cella {
+    margin: 1px;
+    width: 50px;
+    height: 50px;;
+    background-color: rgb(202, 182, 174);
+    border-top: 4px solid rgb(119, 103, 103);
+    border-left: 4px solid rgb(119, 103, 103);
+    border-bottom: 4px solid rgb(49, 41, 41);
+    border-right: 4px solid rgb(49, 41, 41);
+    border-radius: 1px;
+}
+
+.cellaVuota {
+    margin: 1px;
+    width: 50px;
+    height: 50px;;
+    background-color: rgb(208, 197, 193);
+    border-top: 4px solid rgb(151, 141, 141);
+    border-left: 4px solid rgb(151, 141, 141);
+    border-bottom: 4px solid rgb(87, 82, 82);
+    border-right: 4px solid rgb(87, 82, 82);
+    border-radius: 1px;
+}
+
+.cellaBand {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/bandiera.png");
+    border-top: 4px solid rgb(151, 141, 141);
+    border-left: 4px solid rgb(151, 141, 141);
+    border-bottom: 4px solid rgb(83, 82, 82);
+    border-right: 4px solid rgb(83, 82, 82);
+    border-radius: 1px;
+}
+
+.cellaBomb {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(202, 182, 174);
+    border-top: 4px solid rgb(119, 103, 103);
+    border-left: 4px solid rgb(119, 103, 103);
+    border-bottom: 4px solid rgb(49, 41, 41);
+    border-right: 4px solid rgb(49, 41, 41);
+    border-radius: 1px;
+}
+
+.cellaBombToccata {
+    background-image: url("../img/bomba.png");
+}
+
+.cella:hover {
+    background-color: rgb(190, 165, 156);
+}
+
+.cella1 {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/cas1.jpg");
+    border-top: 4px solid rgb(119, 103, 103);
+    border-left: 4px solid rgb(119, 103, 103);
+    border-bottom: 4px solid rgb(49, 41, 41);
+    border-right: 4px solid rgb(49, 41, 41);
+    border-radius: 1px;
+}
+
+.cella2 {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/cas2.jpg");
+    border-top: 4px solid rgb(119, 103, 103);
+    border-left: 4px solid rgb(119, 103, 103);
+    border-bottom: 4px solid rgb(49, 41, 41);
+    border-right: 4px solid rgb(49, 41, 41);
+    border-radius: 1px;
+}
+
+.cella3 {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/cas3.jpg");
+    border-top: 4px solid rgb(119, 103, 103);
+    border-left: 4px solid rgb(119, 103, 103);
+    border-bottom: 4px solid rgb(49, 41, 41);
+    border-right: 4px solid rgb(49, 41, 41);
+    border-radius: 1px;
+}
+
+.cella4 {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/cas4.jpg");
+    border-top: 4px solid rgb(119, 103, 103);
+    border-left: 4px solid rgb(119, 103, 103);
+    border-bottom: 4px solid rgb(49, 41, 41);
+    border-right: 4px solid rgb(49, 41, 41);
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#divimp {
+    text-align: center;
+    font-size: 26px;
+}
+
+#dsel {
+    margin: 0 auto;
+    width:fit-content
+}
+
+#bcrea {
+    width: 100%;
+    background-color: rgb(130, 204, 152);
+}
+
+#bcrea:hover {
+    background-color: rgb(116, 180, 135);
+}
+
+#rimBand {
+    text-align: center;
+}
+
+#rimTem {
+    text-align: center;
+}

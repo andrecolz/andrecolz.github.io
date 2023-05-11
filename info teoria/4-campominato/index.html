@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>campo minato</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/campo.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id="barra">
+            <h2 id="tit">Campo Minato</h2>
+        </div>
+
+        <div id="cont">
+            
+        </div>
+
+        <div id="cont2">
+            <div id="stati">
+                <h2 id="divimp">statistiche</h2>
+                <h3 id="rimBand">Bandiere: 0</h3>
+                <h3 id="rimTem">Tempo: 0</h3>
+            </div>
+
+            <div id="difficolta">
+                <h2 id="divimp">impostazioni</h2>
+                <div id="dsel">
+                    <p>
+                        difficoltà: 
+                        <select id="liv">
+                            <option value="1">facile</option>
+                            <option value="2">medio</option>
+                            <option value="3">difficle</option>
+                        </select>
+                    </p>
+                    <p>
+                        mine: 
+                        <input type="text" maxlength="2" size="7" id="nmin" value="3">
+                    </p>
+                    <button id="bcrea" onclick="creacamp()">crea</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function creacamp(){
+                let c = "1";
+                c++;
+                $("#cont").empty();
+                let mine = $("#nmin").val();
+                let dif = $("#liv").val();
+                const campo = new CCampo(mine, dif);
+                campo.generaCampo();
+                $("#bcrea").html("ricrea");
+                campo.aggiornaStat();
+            }
+        </script>
+    </body>
+</html>

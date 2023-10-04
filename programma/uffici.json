@@ -1,0 +1,166 @@
+[
+  {
+    "id": 1,
+    "nomeUfficio": "ricerca e sviluppo",
+    "piano": 2,
+    "siglaLocale": "RES",
+    "numeroPostazioni": 3,
+    "nomeResponsabile": "Fausto Gervasoni",
+    "listD": [
+      {
+        "nome": "Fasuto",
+        "cognome": "Gervasoni",
+        "residenza": "via gino 3, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 32,
+        "ufficio": 1
+      },
+      {
+        "nome": "Pino",
+        "cognome": "Napolitano",
+        "residenza": "via napoli 13, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 22,
+        "ufficio": 1
+      },
+      {
+        "nome": "Luca",
+        "cognome": "Zaia",
+        "residenza": "via veneto 6, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 41,
+        "ufficio": 1
+      },
+      {
+        "nome": "Andrea",
+        "cognome": "Obama",
+        "residenza": "via america 9, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 38,
+        "ufficio": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nomeUfficio": "magazzino",
+    "piano": 0,
+    "siglaLocale": "MG",
+    "numeroPostazioni": 2,
+    "nomeResponsabile": "Huber Canton",
+    "listD": [
+      {
+        "nome": "Huber",
+        "cognome": "Canton",
+        "residenza": "via pina 5, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 36,
+        "ufficio": 2
+      },
+      {
+        "nome": "Luca",
+        "cognome": "Backett",
+        "residenza": "via milano 7, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 37,
+        "ufficio": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nomeUfficio": "segreteria",
+    "piano": 1,
+    "siglaLocale": "STR",
+    "numeroPostazioni": 2,
+    "nomeResponsabile": "Marina Massironi",
+    "listD": [
+      {
+        "nome": "Marina",
+        "cognome": "Massironi",
+        "residenza": "via morandi 27, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 30,
+        "ufficio": 3
+      },
+      {
+        "nome": "Fabrizio",
+        "cognome": "Corona",
+        "residenza": "via pechino 28, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 30,
+        "ufficio": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nomeUfficio": "marketing",
+    "piano": 1,
+    "siglaLocale": "MRK",
+    "numeroPostazioni": 2,
+    "nomeResponsabile": "Lorenzo Fontana",
+    "listD": []
+  },
+  {
+    "id": 4,
+    "nomeUfficio": "marketing",
+    "piano": 1,
+    "siglaLocale": "MRK",
+    "numeroPostazioni": 2,
+    "nomeResponsabile": "Lorenzo Fontana",
+    "listD": []
+  },
+  {
+    "id": 4,
+    "nomeUfficio": "marketing",
+    "piano": 1,
+    "siglaLocale": "MRK",
+    "numeroPostazioni": 2,
+    "nomeResponsabile": "Lorenzo Fontana",
+    "listD": [
+      {
+        "nome": "Lorenzo",
+        "cognome": "Fontana",
+        "residenza": "via lombardia 14, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 32,
+        "ufficio": 4
+      },
+      {
+        "nome": "Letizia",
+        "cognome": "Moratti",
+        "residenza": "via lombardia 14, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 36,
+        "ufficio": 4
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nomeUfficio": "marketing",
+    "piano": 1,
+    "siglaLocale": "MRK",
+    "numeroPostazioni": 2,
+    "nomeResponsabile": "Lorenzo Fontana",
+    "listD": [
+      {
+        "nome": "Lorenzo",
+        "cognome": "Fontana",
+        "residenza": "via lombardia 14, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 32,
+        "ufficio": 4
+      },
+      {
+        "nome": "Letizia",
+        "cognome": "Moratti",
+        "residenza": "via lombardia 14, 22066",
+        "assunzione": "04/10/2023",
+        "oreSettimanali": 36,
+        "ufficio": 4
+      }
+    ]
+  }
+]
